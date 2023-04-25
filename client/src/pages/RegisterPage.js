@@ -66,8 +66,8 @@ const RegisterPage = () => {
   return (
     <div className="page-layout">
       <input type="text" ref={nameRef} placeholder="username" />
-      <input type="text" ref={passwordRef} placeholder="password" />
-      <input type="text" ref={passwordTwoRe} placeholder="password 2" />
+      <input type="password" ref={passwordRef} placeholder="password" />
+      <input type="password" ref={passwordTwoRe} placeholder="password 2" />
 
       <button onClick={auth}>Register</button>
 

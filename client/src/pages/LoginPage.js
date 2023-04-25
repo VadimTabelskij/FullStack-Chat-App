@@ -71,7 +71,7 @@ const LoginPage = () => {
   return (
     <div className="page-layout">
       <input type="text" ref={nameRef} placeholder="username" />
-      <input type="text" ref={passwordRef} placeholder="password" />
+      <input type="password" ref={passwordRef} placeholder="password" />
 
       <button onClick={auth}>Login</button>
       {isSuccess === true && <p className="success-color">Success</p>}
