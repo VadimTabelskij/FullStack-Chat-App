@@ -45,7 +45,7 @@ const ChatPage = () => {
           console.log(data);
           setConversation(data.conversation);
         });
-    }, 1000); // fetch every 1 seconds
+    }, 1000); 
 
     return () => clearInterval(interval);
   }, [id]);

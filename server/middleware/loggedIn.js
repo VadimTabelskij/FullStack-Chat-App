@@ -6,7 +6,7 @@ module.exports = async (req, res, next) => {
   const myUser = await userSchema.findOne({ secret });
 
   if (!myUser) return res.send({ error: true, message: 'bad auth' });
-  req.body.email = myUser.email;
+  req.body.username = myUser.username;
 
   next();
 };
