@@ -6,4 +6,4 @@
 
   ### Create a `.env` file and create variables as mentioned in the `.env.example` with the values
 
-  ### Run `npm start` to start the server [Should have installed nodemon globally]
+  ### Run `npm start` to start the server
