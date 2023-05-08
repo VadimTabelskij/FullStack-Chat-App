@@ -20,11 +20,11 @@ module.exports = {
 
     res.send({ success: true });
   },
+  
   deleteConversation: async (req, res) => {
     try {
       const conversationId = req.params.id;
-
-      // Delete the conversation from the database
+      
       await conversationDb.deleteOne({ _id: conversationId });
 
       res.send({ success: true });
@@ -43,6 +43,7 @@ module.exports = {
 
     res.send({ success: true, conversations });
   },
+
   getChat: async (req, res) => {
     const { id } = req.params;
     const conversation = await conversationDb.findOne({ _id: id });
